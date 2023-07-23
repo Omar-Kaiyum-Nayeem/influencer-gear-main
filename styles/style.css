@@ -1,0 +1,83 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  pad: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header section start */
+
+h3 {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav {
+  margin: 90px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div ul ul {
+  display: flex;
+}
+nav div a {
+  text-decoration: none;
+  margin-right: 34px;
+}
+nav div ul {
+  list-style: none;
+}
+.fa-list-ul.three-dot {
+  display: none;
+}
+/* header section end */
+
+/* main start */
+
+.influencer {
+  margin: 80px 120px;
+}
+
+.prebook-btn {
+    border: none;
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 24px;
+}
+
+.prebook-btn-text{
+    color: #FFF;
+}
+/* main end  */
+@media screen and (max-width: 576px) {
+  nav {
+    margin: 40px 19px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .fa-list-ul.three-dot {
+    display: block;
+    margin-left: -40px;
+  }
+
+  nav div ul ul {
+    display: none;
+  }
+
+  nav div ul:hover .drop-down {
+    display: block;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: lightblue;
+  }
+}
